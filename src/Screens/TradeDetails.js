@@ -4,6 +4,12 @@ import { StyleSheet, Platform, Image, Text, View } from 'react-native';
 import firebase from 'react-native-firebase';
 
 export default class TradeDetail extends React.Component {
+
+    static navigationOptions = {
+        title: 'Trade Details',
+    };
+
+
     constructor() {
         super();
         this.state = {

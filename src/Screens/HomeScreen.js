@@ -1,9 +1,15 @@
 import React from 'react';
 import { StyleSheet, Platform, Image, Text, View, Button } from 'react-native';
 
+
 import firebase from 'react-native-firebase';
 
 export default class HomeScreen extends React.Component {
+    static navigationOptions = {
+        title: 'Home',
+    };
+
+
     constructor() {
         super();
         this.state = {
