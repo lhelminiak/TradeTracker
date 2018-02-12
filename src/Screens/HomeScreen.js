@@ -3,6 +3,7 @@ import { StyleSheet, Platform, Image, Text, View, Button } from 'react-native';
 
 
 import firebase from 'react-native-firebase';
+import ScrollList from "../Components/ScrollList";
 
 export default class HomeScreen extends React.Component {
     static navigationOptions = {
@@ -29,6 +30,8 @@ export default class HomeScreen extends React.Component {
                     title="Go To Details"
                     onPress={() => this.props.navigation.navigate('Details')}
                 />
+                <ScrollList/>
+
             </View>
         );
     }
