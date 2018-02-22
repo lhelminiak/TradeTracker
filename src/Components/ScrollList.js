@@ -52,6 +52,7 @@ export default class ScrollList extends React.Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
+        width: '100%'
     },
     sectionHeader: {
         paddingTop: 4,
